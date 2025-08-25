@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background-color: #222;
+  color: white;
+  position: fixed; /* barra fixa no topo */
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo img {
+  cursor: pointer;
+}
+
+.nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #00bfff;
+}
