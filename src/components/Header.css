@@ -25,3 +25,22 @@
 .nav a:hover {
   color: #00bfff;
 }
+
+/* Responsivo para celular */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+  .logo {
+    margin-bottom: 10px; /* espaço abaixo do logo */
+  }
+  .nav {
+    position: static; /* remove centralização absoluta */
+    transform: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* espaço entre os links */
+  }
+}
