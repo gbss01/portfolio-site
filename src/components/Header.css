@@ -1,15 +1,7 @@
-/* Global box-sizing */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* Header */
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* logo à esquerda, nav à direita */
+  justify-content: space-between;
   padding: 10px 50px;
   background-color: #222;
   color: white;
@@ -17,49 +9,19 @@
   top: 0;
   width: 100%;
   z-index: 100;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
-/* Logo */
 .logo img {
   cursor: pointer;
-  max-height: 50px;
-}
-
-/* Navegação */
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 30px; /* espaço entre os links */
 }
 
 .nav a {
+  margin-left: 30px;
   text-decoration: none;
   color: white;
   font-weight: bold;
-  transition: color 0.3s;
 }
 
 .nav a:hover {
   color: #00bfff;
-}
-
-/* Responsivo para celular */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: row;       /* mantém a linha */
-    justify-content: space-between; /* logo à esquerda, nav à direita */
-    padding: 10px 20px;
-    align-items: center;
-  }
-
-  .nav {
-    flex-direction: column;    /* empilha os links verticalmente */
-    gap: 10px;
-    align-items: flex-end;     /* links à direita */
-  }
-
-  .nav a {
-    font-size: 16px;
-  }
 }
