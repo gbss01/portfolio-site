@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 50px;
+  padding: 10px 0 5px 0;
   background-color: #222;
   color: white;
   position: fixed; /* barra fixa no topo */
@@ -11,9 +11,10 @@
   z-index: 100;
 }
 
-.logo img {
-  cursor: pointer;
+.logo {
+  justify-content: start;
 }
+
 
 .nav a {
   margin-left: 30px;
@@ -24,4 +25,27 @@
 
 .nav a:hover {
   color: #00bfff;
+}
+
+@media (max-width: 1080px) {
+  .header {
+    flex-direction: column;
+    padding: 10px 20px;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 10px; /* espaço abaixo do logo */
+  }
+
+  .nav {
+    flex-direction: column; /* empilha os links verticalmente */
+    gap: 15px; /* espaço entre os links */
+    width: 100%;
+    align-items: center;
+  }
+
+  .nav a {
+    font-size: 18px;
+  }
 }
