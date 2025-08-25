@@ -1,14 +1,11 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 50px;
-  background-color: #222;
+  position: relative;
+  padding: 0 0;
+  height: 60px;
+  background-color:#222;
   color: white;
-  position: fixed; /* barra fixa no topo */
-  top: 0;
-  width: 100%;
-  z-index: 100;
 }
 
 .logo img {
