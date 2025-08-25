@@ -30,12 +30,8 @@
 @media (max-width: 1080px) {
   .header {
     flex-direction: column;
-    padding: 10px 0;
+    padding: 10px ;
     align-items: center;
-  }
-
-  .logo {
-    margin-bottom: 10px; /* espaço abaixo do logo */
   }
 
   .nav {
