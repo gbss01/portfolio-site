@@ -53,17 +53,21 @@
   }
 
   .logo {
-    margin-bottom: 10px; /* espaço abaixo do logo */
+    margin-bottom: 15px; /* espaço maior abaixo do logo */
   }
 
   .nav {
     flex-direction: column; /* empilha os links verticalmente */
-    gap: 15px; /* espaço entre os links */
+    gap: 20px; /* espaço entre os links */
     width: 100%;
     align-items: center;
   }
 
   .nav a {
-    font-size: 18px;
+    font-size: 16px; /* tamanho menor para caber na tela */
+    min-height: 40px; /* toque mais amigável */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
