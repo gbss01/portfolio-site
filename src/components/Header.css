@@ -9,7 +9,7 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* logo à esquerda, nav à direita */
   padding: 10px 50px;
   background-color: #222;
   color: white;
@@ -47,27 +47,19 @@
 /* Responsivo para celular */
 @media (max-width: 768px) {
   .header {
-    flex-direction: column;
+    flex-direction: row;       /* mantém a linha */
+    justify-content: space-between; /* logo à esquerda, nav à direita */
     padding: 10px 20px;
     align-items: center;
   }
 
-  .logo {
-    margin-bottom: 15px; /* espaço maior abaixo do logo */
-  }
-
   .nav {
-    flex-direction: column; /* empilha os links verticalmente */
-    gap: 20px; /* espaço entre os links */
-    width: 100%;
-    align-items: center;
+    flex-direction: column;    /* empilha os links verticalmente */
+    gap: 10px;
+    align-items: flex-end;     /* links à direita */
   }
 
   .nav a {
-    font-size: 16px; /* tamanho menor para caber na tela */
-    min-height: 40px; /* toque mais amigável */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 16px;
   }
 }
