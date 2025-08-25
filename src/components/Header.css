@@ -30,7 +30,7 @@
 @media (max-width: 1080px) {
   .header {
     flex-direction: column;
-    padding: 10px 20px;
+    padding: 10px 0;
     align-items: center;
   }
 
